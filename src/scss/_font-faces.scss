@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Red Hat Text";
+  src: local("Red Hat Text"),
+    url("/src/assets/fonts/static/RedHatText-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Red Hat Text";
+  src: local("Red Hat Text"),
+    url("/src/assets/fonts/static/RedHatText-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Red Hat Text";
+  src: local("Red Hat Text"),
+    url("/src/assets/fonts/static/RedHatText-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}

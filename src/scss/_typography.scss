@@ -1,0 +1,36 @@
+b,
+strong {
+  font-weight: var(--fw-600);
+}
+
+.text-preset {
+  &-1 {
+    font-weight: var(--fw-700);
+    font-size: var(--fs-xl);
+    line-height: var(--lh-120);
+  }
+
+  &-2 {
+    font-weight: var(--fw-700);
+    font-size: var(--fs-lg);
+    line-height: var(--lh-125);
+  }
+
+  &-3 {
+    font-weight: var(--fw-600);
+    font-size: var(--fs-rg);
+    line-height: var(--lh-150);
+  }
+
+  &-4 {
+    font-weight: var(--fw-400);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-150);
+  }
+
+  &-4-semibold {
+    font-weight: var(--fw-600);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-150);
+  }
+}
