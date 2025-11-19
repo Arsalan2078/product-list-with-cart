@@ -1,0 +1,37 @@
+@layer {
+  .text-preset {
+    font-family: var(--ff-red-hat-text);
+    line-height: var(--lh-normal);
+
+    &--1 {
+      @extend .text-preset;
+      font-size: var(--fs-xl);
+      font-weight: var(--fw-700);
+      line-height: var(--lh-120);
+    }
+
+    &--2 {
+      @extend .text-preset;
+      font-size: var(--fs-rg);
+      font-weight: var(--fw-700);
+    }
+
+    &--3 {
+      @extend .text-preset;
+      font-size: var(--fs-rg);
+      font-weight: var(--fw-400);
+    }
+
+    &--4 {
+      @extend .text-preset;
+      font-size: var(--fs-sm);
+      font-weight: var(--fw-400);
+    }
+
+    &--4-semibold {
+      @extend .text-preset;
+      @extend .text-preset--4;
+      font-weight: var(--fw-600);
+    }
+  }
+}
