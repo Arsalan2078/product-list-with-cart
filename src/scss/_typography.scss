@@ -22,6 +22,12 @@
       font-weight: var(--fw-400);
     }
 
+    &--3-semibold {
+      @extend .text-preset;
+      @extend .text-preset--3;
+      font-weight: var(--fw-600);
+    }
+
     &--4 {
       @extend .text-preset;
       font-size: var(--fs-sm);
