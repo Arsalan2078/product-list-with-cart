@@ -3,3 +3,7 @@
 @use "./root";
 @use "./base";
 @use "./typography";
+
+* {
+  outline: 1px solid red;
+}

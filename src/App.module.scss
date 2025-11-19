@@ -1,0 +1,43 @@
+.app {
+  margin: 0 auto;
+  width: min(100%, calc(1440 / 16 * 1rem));
+  min-height: 100dvh;
+
+  --padding-y: clamp(1.5rem, 0.5rem + 4.1667vw, 2.5rem);
+  --padding-x: clamp(1.5rem, 0.5rem + 4.1667vw, 2.5rem);
+
+  padding: var(--padding-y) var(--padding-x);
+
+  @media screen and (min-width: calc(768 / 16 * 1rem)) {
+    --padding-y: clamp(2.5rem, -0.9286rem + 7.1429vw, 5.5rem);
+    --padding-x: clamp(2.5rem, -2.6429rem + 10.7143vw, 7rem);
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 2rem 2rem;
+  grid-template-areas:
+    "c-1"
+    "c-2"
+    "c-3";
+
+  header {
+    grid-area: c-1;
+  }
+
+  main {
+    grid-area: c-2;
+  }
+
+  aside {
+    grid-area: c-3;
+  }
+
+  @media screen and (min-width: calc(1060 / 16 * 1rem)) {
+    grid-template-columns: 1fr calc(384 / 16 * 1rem);
+    grid-template-areas:
+      "c-1 c-3"
+      "c-2 c-3";
+  }
+}
