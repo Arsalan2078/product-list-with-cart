@@ -34,10 +34,19 @@
     grid-area: c-3;
   }
 
-  @media screen and (min-width: calc(1060 / 16 * 1rem)) {
-    grid-template-columns: 1fr calc(384 / 16 * 1rem);
+  @media screen and (min-width: calc(1264 / 16 * 1rem)) {
+    grid-template-columns: 1fr clamp(20.4375rem, -5.1477rem + 32.3864vw, 24rem);
     grid-template-areas:
       "c-1 c-3"
       "c-2 c-3";
   }
+}
+
+main ul {
+  display: grid;
+  gap: 1.5rem 1.5rem;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, calc(213.3 / 16 * 1rem)), 1fr)
+  );
 }
